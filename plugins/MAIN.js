@@ -285,7 +285,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 });
 //======================= system command =====================
 
-cmd({
+/*/cmd({
     pattern: "system",
     alias: ["info","botinfo"],
     desc: "check up time",
@@ -308,6 +308,7 @@ let status =`
 `
 const imageUrl='https://iili.io/29wAvDu.jpg';
     await conn.sendMessage(from,{image:{url:imageUrl},caption:status},{quoted:mek||null})}catch(e){console.log(e);reply(`Error: ${e}`);}});
+    /*/
 //=================== ping command =======================
 
 
